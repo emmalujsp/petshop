@@ -2,51 +2,144 @@
 <head>
 <title>PET WORLD</title>
 <link href="photo/logo.jpg" rel="icon">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
-.mod
-{
-font-size:18px;
-text-decoration:none;
-color:black;
+.navbar-custom { 
+    background-color: #ecf0f1; 
+	 min-height: 50px;
 }
-.mod:hover
+body
 {
-color:blue;
-font-size:20px;
-}
-.pic
-{
-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
-border: 3px solid black; 
-border-radius:20px;
-}
-.cap{
-text-align:center; margin-top:5px;font-size:35px;
+background-color:#7ed6df;
 }
 </style>
 </head>
-<body bgcolor="#7ed6df" style="background-size:cover; margin:0px;">
-<table width="100%" bgcolor="#ecf0f1" cellpadding="0px" cellspacing="0px" >
-	<tr height="70px" align="center">
-		<td width="10%"><a href="pethome.html"><img src="photo/logo.jpg" height="70px" width="100%"></a></td>
-		<td width="50%"></td>
-		<td width="10%"><a href="#" class="mod">Home</a></td>
-		<td width="10%"><a href="#" class="mod">Pets</a></td>
-		<td width="10%"><a href="#" class="mod">Login</a></td>
-		<td width="10%"><a href="#" class="mod">About</a></td>
-	</tr>
-</table>
-<table cellpadding="50px">
-<tr>
-<td><img src="photo/dog.png " width="400px" height="300px" class="pic"><figcaption class="cap" >Dog</figcaption></td>
-<td><img src="photo/cat.jpg" width="400px" height="300px" class="pic"><figcaption class="cap" >Cat</figcaption></td>
-<td><img src="photo/rabbit.jpg"width="400px" height="300px" class="pic"><figcaption class="cap" >Rabbit</figcaption></td>
-</tr>
-<tr>
-<td><img src="photo/guinea.jpg " width="400px" height="300px" class="pic"><figcaption class="cap" >Guinea</figcaption></td>
-<td><img src="photo/rat.jpg" width="400px" height="300px" class="pic"><figcaption class="cap" >Rat</figcaption></td>
-<td><img src="photo/pigeon.jpg"width="400px" height="300px" class="pic"><figcaption class="cap" >Pigeon</figcaption></td>
-</tr>
-</table>
+<body>
+<nav class="navbar navbar-custom">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavigation" >
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Logo</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavigation">
+			<ul class="nav navbar-nav">
+				<li><a href="shop.php">Home</a></li>
+				<li><a href="Sale.php">Sell</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href='login.php'><span class='glyphicon glyphicon-user'></span>Your account</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				Dog
+				</div>
+				<div class="panel-body">
+				<img src="photo/dog.png" class="image-responsive" style="width:100%;height:20%;">
+				</div>
+				<div class="panel-footer">
+				<audio controls>
+				  <source src="audio/uyire.mp3" type="audio/mpeg">
+				  Your browser does not support the audio tag.
+				</audio>
+				</div>
+			</div>
+		</div>
+				<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				Cat
+				</div>
+				<div class="panel-body">
+				<img src="photo/cat.jpg" class="image-responsive" style="width:100%;height:20%;">
+				</div>
+				<div class="panel-footer">
+						<audio controls>
+				  <source src="audio/uyire.mp3" type="audio/mpeg">
+				  Your browser does not support the audio tag.
+				</audio>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				Rabbit
+				</div>
+				<div class="panel-body">
+				<img src="photo/rabbit.jpg" class="image-responsive" style="width:100%;height:20%;">
+				</div>
+				<div class="panel-footer">
+				<audio controls>
+				  <source src="audio/uyire.mp3" type="audio/mpeg">
+				  Your browser does not support the audio tag.
+				</audio>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				Guinea
+				</div>
+				<div class="panel-body">
+				<img src="photo/guinea.jpg" class="image-responsive" style="width:100%;height:20%;">
+				</div>
+				<div class="panel-footer">
+					<audio controls>
+				  <source src="audio/uyire.mp3" type="audio/mpeg">
+				  Your browser does not support the audio tag.
+				</audio>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				Rat
+				</div>
+				<div class="panel-body">
+				<img src="photo/rat.jpg" class="image-responsive" style="width:100%;height:20%;">
+				</div>
+				<div class="panel-footer">
+				<audio controls>
+				  <source src="audio/uyire.mp3" type="audio/mpeg">
+				  Your browser does not support the audio tag.
+				</audio>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				Pigeon
+				</div>
+				<div class="panel-body">
+				<img src="photo/pigeon.jpg" class="image-responsive" style="width:100%;height:20%;">
+				</div>
+				<div class="panel-footer">
+					<audio controls>
+				  <source src="audio/uyire.mp3" type="audio/mpeg">
+				  Your browser does not support the audio tag.
+				</audio>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>	
 </body>
 </html>

@@ -2,18 +2,9 @@
 <head>
 <title>PET WORLD</title>
 <link href="photo/logo.jpg" rel="icon">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <style>
-.mod
-{
-font-size:18px;
-text-decoration:none;
-color:black;
-}
-.mod:hover
-{
-color:blue;
-font-size:20px;
-}
 .hd {
   padding: 60px;
   text-align: center;
@@ -28,9 +19,6 @@ text-align:center;
 font-size:35px;
 text-decoration:none;
 color:red;
-top:110%;
-left:15%;
-position:absolute;
  padding: 14px 25px;
  border: 3px solid #3498db; 
         background-color: transparent; 
@@ -47,31 +35,63 @@ footer {
   background-color:#7ed6df;
   color: white;
 }
+.navbar-custom { 
+    background-color: #ecf0f1; 
+	 min-height: 50px;
+}
+.jumbotron{
+background-image: url(photo/logo.jpg), url(photo/banner.jpg);
+  background-position: left bottom, left top;
+  background-repeat: no-repeat, repeat;
+color:white;
+  height: 500px;
+background-size:20% 20%,100% 100%  
+}
+@media (max-width: 767px) {
+    .bk {
+        min-height: 33.3333333%;
+        height: 33.3333333%;
+    } 
+}
 </style>
 </head>
 <body bgcolor="#7ed6df" style="background-size:cover; margin:0px;">
-<table width="100%" bgcolor="#ecf0f1" cellpadding="0px" cellspacing="0px" >
-	<tr height="70px" align="center">
-		<td width="10%"><a href="pethome.html"><img src="photo/logo.jpg" height="70px" width="100%"></a></td>
-		<td width="50%"></td>
-		<td width="10%"><a href="#" class="mod">Home</a></td>
-		<td width="10%"><a href="#" class="mod">Pets</a></td>
-		<td width="10%"><a href="#" class="mod">Login</a></td>
-		<td width="10%"><a href="#" class="mod">About</a></td>
-	</tr>
-</table>
+<nav class="navbar navbar-custom">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavigation" >
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">Logo</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavigation">
+			<ul class="nav navbar-nav">
+				<li><a href="shop.php">Home</a></li>
+				<li><a href="Sale.php">Sell</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Service</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href='login.php'><span class='glyphicon glyphicon-user'></span>Your account</a></li>
+				<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span>Cart</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
 <header class="hd">
   <h1 style="font-size:70px; font-family:Comic Sans MS;">Pet World</h1>
   <p>A Website For All Pets</p>
 </header>
-<table width="100%"  cellpadding="0px" cellspacing="0px">
-	<tr height="550px">
-		<td><img src="photo/banner.jpg" height="550px" width="100%">
-		<a href="petview.html" class="bk" >FIND ALL PETS</a>
-		</td>
-	</tr>
-</table>
-
+<div class="jumbotron">
+</div>
+  <div class="col-lg-12" style="background-color:white; min-height:120px;">
+      <div class="container text-center">
+			<a href="petview.html" class="bk" >FIND ALL PETS</a>
+	</div>
+    </div>
 <footer>
   <p>Shop: Emmalu Joseph<br>
   KOTTAYM KERALA<br>Open from <time>10:00</time> to <time>21:00</time> every weekday.
