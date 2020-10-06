@@ -11,6 +11,10 @@
   background: #1abc9c;
   color: white;
   font-size: 30px;
+    animation-name: example;
+  animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
 }
 .bk
 {
@@ -52,6 +56,10 @@ background-size:20% 20%,100% 100%
         min-height: 33.3333333%;
         height: 33.3333333%;
     } 
+}
+@keyframes example {
+  from {background-color:#1abc9c;}
+  to {background-color: yellow;}
 }
 </style>
 </head>
