@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pets>
+<pet mid="M1">
+<type>Pug</type>
+<price>10000</price>
+<age>1</age>
+<color>white</color>
+<place>Kottayam</place>
+</pet>
+<pet mid="M2">
+<type>Pigeon</type>
+<price>1000</price>
+<age>2</age>
+<color>Black</color>
+<place>Kochi</place>
+</pet>
+<pet mid="M3">
+<type>Cat</type>
+<price>5000</price>
+<age>1</age>
+<color>White</color>
+<place>Ernakulam</place>
+</pet>
+<pet mid="M4">
+<type>Rabbit</type>
+<price>800</price>
+<age>2</age>
+<color>Brown</color>
+<place>Kannur</place>
+</pet>
+</pets>
