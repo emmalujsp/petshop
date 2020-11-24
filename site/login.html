@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>Login</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<style>
+.jumbotron{
+background-color:white;
+position:absolute;
+ padding: 14px 20px;
+top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+width:30%;
+box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); 
+}
+</style>
+</head>
+<body style="background-color:#ecf0f1;">
+    <script>
+        function Setcookie()
+        {
+            if(document.getElementById("rem_check").checked==true)
+            {
+                document.cookie="username="+document.getElementById("username").value+";expires=Thu, 19 Nov 2020 23:50:00 UTC";;
+                document.cookie="password="+document.getElementById("password").value;
+                window.location.href("pethome.html");
+            }
+        }
+        window.onload=function()
+        {
+            if(document.cookie.length!=0)
+            {
+                var Allcookies,Temp;
+                Allcookies=document.cookie.split(";");   
+                for(var i=0;i<Allcookies.length;i++)
+                {
+                    Temp=Allcookies[i].split("=");
+                    if(Temp[0]=="username")
+                    {
+                        document.getElementById("username").value=Temp[1];
+                    }
+                    if(Temp[0]==" password")
+                    {
+                        document.getElementById("password").value=Temp[1];
+                    }
+                }
+            }
+        }
+    </script>
+<div class="jumbotron">
+<div class="container">
+<form class="form">
+<p>User</p>
+<input class="form-control" type="text" placeholder="Enter Username" id="username" name="uname" required>
+<br>
+<input type="Password" class="form-control" size="50%" placeholder="Password" name="psw" id="password">
+<br>
+<input type="checkbox" id="rem_check" checked="checked" name="remember"> Remember me
+<br><br>
+<button class="btn btn-danger" onclick="Setcookie()">Login</button>&nbsp <a href="#" class="btn btn-info">Register</a>
+</div>
+</div>
+</body>
+</html>
